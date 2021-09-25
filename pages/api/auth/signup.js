@@ -15,7 +15,7 @@ const handler = async (req, res) => {
     res.status(422).json({ message: "Invalid input" });
     return;
   }
-  const client = connectDatabase();
+  const client = await connectDatabase();
   const db = client.db();
   const existingUser = await db.collection('users').findOne({email});
   if (existingUser) {
