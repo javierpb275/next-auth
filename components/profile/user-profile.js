@@ -1,7 +1,7 @@
 import ProfileForm from "./profile-form";
 import classes from "./user-profile.module.css";
-import { getSession } from "next-auth/client";
-import { useEffect, useState } from "react";
+/* import { getSession } from "next-auth/client";
+import { useEffect, useState } from "react"; */
 
 const UserProfile = () => {
 /*   const [isLoading, setIsLoading] = useState(true);
