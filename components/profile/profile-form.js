@@ -13,7 +13,7 @@ const ProfileForm = (props) => {
 
     props.onChangePassword({
       oldPassword: enteredOldPassword,
-      newPasword: enteredNewPassword,
+      newPassword: enteredNewPassword,
     });
   };
 
