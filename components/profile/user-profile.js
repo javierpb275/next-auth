@@ -3,7 +3,7 @@ import classes from "./user-profile.module.css";
 /* import { getSession } from "next-auth/client";
 import { useEffect, useState } from "react"; */
 
-const UserProfile = () => {
+const UserProfile = (props) => {
   /*   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -31,13 +31,11 @@ const UserProfile = () => {
     });
 
     const data = await response.json();
-
-    console.log(data);
   };
 
   return (
     <section className={classes.profile}>
-      <h1>Your User Profile</h1>
+      <h1>{props.user.email}</h1>
       <ProfileForm onChangePassword={changePasswordHandler} />
     </section>
   );

@@ -1,8 +1,8 @@
 import UserProfile from "../components/profile/user-profile";
 import { getSession } from "next-auth/client";
 
-const ProfilePage = () => {
-  return <UserProfile />;
+const ProfilePage = (props) => {
+  return <UserProfile user={props.session.user}/>;
 };
 
 export async function getServerSideProps(context) {
